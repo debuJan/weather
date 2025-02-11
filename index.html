@@ -11,7 +11,7 @@
     <div class="card">
         <div class="search">
             <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false">
-            <button id="searchBtn"><img src="images/search.png" alt="Search"></button>
+            <button id="searchBtn"><img src="search.png" alt="Search"></button>
 
         </div>
 
@@ -20,19 +20,19 @@
         </div>
 
         <div class="weather">
-            <img src="images/weather.webp" class="weather-icon" alt="Weather Icon">
+            <img src="weather.webp" class="weather-icon" alt="Weather Icon">
             <h1 class="temp">--°C</h1>
             <h2 class="city">City</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png" alt="Humidity">
+                    <img src="humidity.png" alt="Humidity">
                     <div>
                         <p class="humidity">--%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="images/wind.png" alt="Wind">
+                    <img src="wind.png" alt="Wind">
                     <div>
                         <p class="wind">-- km/h</p>
                         <p>Wind Speed</p>
@@ -84,7 +84,7 @@ async function checkWeather() {
         if (iconCode) {
             weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
         } else {
-            weatherIcon.src = "images/default.png"; // Fallback icon
+            weatherIcon.src = "default.png"; // Fallback icon
         }
 
         document.querySelector(".weather").style.display = "block";
